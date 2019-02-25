@@ -3,16 +3,17 @@ $(document).ready(function () {
 
     window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navigation");
-var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("navigation");
+    var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+
     //owl carousel listProductRelate
     //---------------------------------------------------------------------
     var owl = $('.list-product-relate');
